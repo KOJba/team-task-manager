@@ -1,5 +1,5 @@
 # team-task-manager
-We as students were tasked to *simulate* a process of software development and this is our school project for subject **155-1325/01 – Vývoj informačních systémů (VIS)**.
+We as students were tasked to *simulate* a process of software development so this is our school project for subject **155-1325/01 – Vývoj informačních systémů (VIS)**.
 Please if this does not concern you, do not alter any files.
 
 ## About project
