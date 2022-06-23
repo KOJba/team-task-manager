@@ -1,5 +1,6 @@
 We included an Entity Realtionship Diagram, so that we could better describe our process of creating database model.
+- and also screenshot from SQL Server Management Studio with foreign keys
 
 #### created DB
-- TeamTasks. - MC SQL Server
+- TeamTasks.mdf - MC SQL Server
 - TEAM_TASKS - Derby
