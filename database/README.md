@@ -1,4 +1,5 @@
 We included an Entity Realtionship Diagram, so that we could better describe our process of creating database model.
 
-Also: DB from MC SQL Studio
-and Derby DB because that is what we used.
+#### created DB
+- TeamTasks. - MC SQL Server
+- TEAM_TASKS - Derby
