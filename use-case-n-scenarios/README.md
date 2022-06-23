@@ -1,4 +1,4 @@
-Every PDF file contains Use Case diagram with short scenario__
+Every PDF file contains Use Case diagram with short scenario <br />
 Use Cases are:
 - UC1 - registrace (registration)
 - UC2 - přihlášení (login)
