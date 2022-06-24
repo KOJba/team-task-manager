@@ -9,10 +9,10 @@ Use Cases are:
 - UC7 - opuštění týmu (leave team)
 - UC8 - smazat profil (delete profile)
 ---
-####Users can also: 
+#### Users can also: 
 - edit their profile
-- logout<br/>
-####Managers can:
+- logout <br/>
+#### Managers can:
 - edit, delete, assign tasks
 - cancel assignments
 - kick out members of their team
