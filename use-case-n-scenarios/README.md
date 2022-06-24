@@ -11,7 +11,7 @@ Use Cases are:
 ---
 Users can also: 
 - edit their profile
-- logout
+- logout<br/>
 Managers can:
 - edit, delete, assign tasks
 - cancel assignments
