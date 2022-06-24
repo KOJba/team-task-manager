@@ -11,7 +11,9 @@ Use Cases are:
 ---
 #### Users can also: 
 - edit their profile
-- logout <br/>
+- logout
+- assign task to themselves
+- create and complete subtasks <br/>
 #### Managers can:
 - edit, delete, assign tasks
 - cancel assignments
