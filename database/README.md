@@ -3,4 +3,4 @@ We included an Entity Realtionship Diagram, so that we could better describe our
 
 #### created DB
 - TeamTasks.mdf - MC SQL Server
-- TEAM_TASKS - Derby
+- TeamTasks folder - Derby
