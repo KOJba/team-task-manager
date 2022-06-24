@@ -5,15 +5,17 @@ Use Cases are:
 - UC3 - vytvoření týmu (create team)
 - UC4 - přidání člena do týmu (add member to team)
 - UC5 - vytvoření úkolu (create task)
-- UC6 - přidělení úkolu (assign task)
-- UC7 - převzetí úkolu (get task)
-- UC8 - splnění úkolu (complete task)
-- UC9 - úprava úkolu (edit task)
-- UC10 - smazání úkolu (delete task)
-- UC11 - zrušení přidělení úkolu (cancel assignment)
-- UC12 - opuštění týmu (leave team)
-- UC13 - odstranění člena týmu (delete member from team)
-- UC14 - změna práv v týmu (change rights - manager)
-- UC15 - odhlášení (logout)
-- UC16 - úprava profilu (edit profile)
-- UC17 - smazat profil (delete profile)
+- UC6 - splnění úkolu (complete task)
+- UC7 - opuštění týmu (leave team)
+- UC8 - smazat profil (delete profile)
+---
+Users can also: 
+- edit their profile
+- logout
+Managers can:
+- edit, delete, assign tasks
+- cancel assignments
+- kick out members of their team
+- change right in team
+
+** some members of our team thought that creating an use case and scenario for functions above is unnecessary
