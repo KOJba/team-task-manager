@@ -18,4 +18,5 @@ Managers can:
 - kick out members of their team
 - change right in team
 
-** some members of our team thought that creating an use case and scenario for functions above is unnecessary
+---
+** some members of our team thought that creating n use case and scenario for functions above is unnecessary
