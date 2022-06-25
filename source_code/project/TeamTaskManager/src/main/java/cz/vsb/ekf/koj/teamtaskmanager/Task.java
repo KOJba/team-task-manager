@@ -3,11 +3,34 @@ package cz.vsb.ekf.koj.teamtaskmanager;
 import java.sql.Date;
 import java.sql.Time;
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
 public class Task {
+
+    public static final Comparator<Task> COMP_TASK = new Comparator<Task>() {
+        @Override
+        public int compare(Task task1, Task task2) {
+            String d1 = String.valueOf(task1.date);
+            String d2 = String.valueOf(task2.date);
+            String t1 = String.valueOf(task1.time);
+            String t2 = String.valueOf(task2.time);
+
+            if ((task1.isComplete && task2.isComplete) || (!task1.isComplete && !task2.isComplete)) {
+                if (d1.equals(d2)) {
+                    return t1.compareTo(t2); // valueOf tif null return "null"
+                }
+                return d1.compareTo(d2);
+            }
+            if (task1.isComplete) {
+                return 1;
+            }
+            return -1;
+            
+        }
+    };
     private int id;
     private int idTeam;
     private String name;
@@ -142,5 +165,15 @@ public class Task {
     public void addSubTask(Subtask s) {
         subTasks.add(s);
     }
-    
-}
+
+   /* @Override
+    public int compareTo(Task task) {
+        if (this.isComplete && task.isComplete) { 
+            if (date.equals(task.date)) { 
+                return time.compareTo(task.time);
+            } return date.compareTo(task.date);
+        } else if (task.isComplete) {
+            return -1;
+        } 
+        return 1;*/
+    }

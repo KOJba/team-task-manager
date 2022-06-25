@@ -49,6 +49,7 @@
                     <br>
                     <label>Termín: </label>
                     <input type="date" name="date">
+                    <label for="time">Čas</label>
                     <input type="time" name="time">
                     <input class="button-like" type="submit" value="Uložit">
                 </form>

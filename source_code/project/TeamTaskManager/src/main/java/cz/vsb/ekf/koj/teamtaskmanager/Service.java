@@ -12,6 +12,9 @@ import java.sql.Time;
 import java.sql.Timestamp;
 import java.time.LocalTime;
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
@@ -209,6 +212,11 @@ public class Service extends HttpServlet {
                 System.err.println("Errror occured while preparing statement for registration: " + ex);
             }
         }
+        request.setAttribute("name", name);
+        request.setAttribute("surname", surname);
+        request.setAttribute("email", email);
+        request.setAttribute("login", login);
+        request.setAttribute("password", password);
         handler(request, response, page);
     }
 
@@ -977,6 +985,7 @@ public class Service extends HttpServlet {
                 task.setWorkerList(getWorkerSet(idTask));
                 taskList.add(task);
                 System.out.println("           --> task (" + idTask + "): added to list");
+                Collections.sort(taskList, Task.COMP_TASK);
             }
         } catch (SQLException ex) {
             System.err.println("Errror occured while preparing statement: " + ex);
@@ -1063,6 +1072,7 @@ public class Service extends HttpServlet {
             stat.setInt(1, idTeam);
             ResultSet rs = stat.executeQuery();
             if (rs.next()) {
+                // this sometimes works, other time not, no idea
                 boolean isManager = rs.getString("MANAGER").equals("true");
                 Team team = new Team(rs.getInt("ID_TEAM"), rs.getString("TITLE"), rs.getString("DESCRIPTION"), rs.getBoolean("MANAGER"));
                 System.out.println("Get team with id: " + idTeam + " where user isManager?: " + isManager + rs.getBoolean("MANAGER"));

@@ -19,7 +19,7 @@
                 </div> 
                 <div class="form-alone">
                     <form method="post" action="Service">
-                        <p>${message.description}</p>
+                        <p style="color: ${message.color}">${message.description}</p>
                         <input type="hidden" name="action" value="registration" hidden>
                         <label for="name">Jméno: </label>
                         <input type="text" id="name" name="name" value="${name}" autofocus required maxlength="50">

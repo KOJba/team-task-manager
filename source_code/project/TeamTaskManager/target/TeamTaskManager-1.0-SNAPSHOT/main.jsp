@@ -49,6 +49,9 @@
             <a class="button-like new-team" href="addteam.jsp">+ Nový tým</a>
         </div> 
         <div>
+            <c:if test="${teams.isEmpty()}">
+                <p>Nejste členem žádného týmu</p>
+            </c:if>
             <c:forEach items="${teams}" var="team">
                 <div class="team-header">
                     <label for="progress"><h2>${team.name}</h2></label>
